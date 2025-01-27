@@ -1,2 +1,4 @@
 ##Header
-Ett testmeddelande. YOOOO
+Ett testmeddelande.
+
+## Header 2
