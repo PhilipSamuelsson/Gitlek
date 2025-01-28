@@ -1,6 +1,16 @@
  
 # En fin jävla header 
 **Det är alltid ett leende som gör dagen bättre!** :smile:
+
+# Vetenskaplig notation i README.md
+
+Den första derivatan av \( f \) med avseende på \( x \) är \( f'(x) \), medan den andra derivatan är \( \frac{d^2y}{dx^2} \).
+
+Användning av subscripts:
+- Första derivatan: \( f₁(x) \)
+- Andra derivatan: \( \frac{d₂y}{dx²} \)
+
+
 > Projektets mål är att skapa en lösning som förenklar och effektiviserar processen för att hantera och analysera data på ett säkert och tillförlitligt sätt.
 
 *En projektbeskrivning som är kursiv.*
