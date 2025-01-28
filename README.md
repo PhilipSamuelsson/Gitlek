@@ -5,11 +5,11 @@
 
 # Vetenskapliga notationer
 
-###Första derivatan
+### Första derivatan
 
 Den första derivatan av \( f \) med avseende på \( x \) är \( f'(x) \), medan den andra derivatan är \( \frac{d^2y}{dx^2} \).
 
-###Användning
+### Användning
  
 Användning av subscripts:
 - Första derivatan: \( f₁(x) \)
