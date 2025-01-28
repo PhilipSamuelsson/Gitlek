@@ -9,6 +9,8 @@
 
 ---
 
+> ETT BLOCKCITAT! 
+
 Nedan följer en ordnad lista i Markdown-format över hur du installerar och får en lampa (LED) att blinka med en Raspberry Pi Pico.
 
     Förberedelser
