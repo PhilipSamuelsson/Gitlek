@@ -46,51 +46,51 @@ This is the conclution section.
 
 Nedan följer en ordnad lista i över hur du installerar och får en lampa (LED) att blinka med en Raspberry Pi Pico.
 
-    1. Förberedelser
-        Material: Raspberry Pi Pico, en LED, ett motstånd (t.ex. 220 Ω), kopplingskablar och en USB-kabel.
-        Programvara: Thonny (eller annan kompatibel IDE) och MicroPython-firmware för Raspberry Pi Pico.
+1. Förberedelser
+	Material: Raspberry Pi Pico, en LED, ett motstånd (t.ex. 220 Ω), kopplingskablar och en USB-kabel.
+	Programvara: Thonny (eller annan kompatibel IDE) och MicroPython-firmware för Raspberry Pi Pico.
 
-    2. Ladda ner MicroPython-firmware
-        Gå till Raspberry Pis officiella webbplats eller MicroPython.org för att hämta den senaste .uf2-filen för Raspberry Pi Pico.
+2. Ladda ner MicroPython-firmware
+	Gå till Raspberry Pis officiella webbplats eller MicroPython.org för att hämta den senaste .uf2-filen för Raspberry Pi Pico.
 
-    3. Sätt Picon i bootloader-läge
-        Håll in BOOTSEL-knappen på Raspberry Pi Pico.
-        Anslut Picon till din dator via USB medan du fortfarande håller in knappen.
-        Släpp BOOTSEL-knappen när Picon dyker upp som en extern lagringsenhet i ditt filsystem.
+3. Sätt Picon i bootloader-läge
+	Håll in BOOTSEL-knappen på Raspberry Pi Pico.
+	Anslut Picon till din dator via USB medan du fortfarande håller in knappen.
+	Släpp BOOTSEL-knappen när Picon dyker upp som en extern lagringsenhet i ditt filsystem.
 
-    4. Ladda MicroPython på Picon
-        Dra och släpp den nedladdade .uf2-filen till din Pico-enhet i filhanteraren (datorn behandlar då Picon som ett USB-minne).
-        När överföringen är klar startar Picon om och är redo att köras med MicroPython.
+4. Ladda MicroPython på Picon
+	Dra och släpp den nedladdade .uf2-filen till din Pico-enhet i filhanteraren (datorn behandlar då Picon som ett USB-minne).
+	När överföringen är klar startar Picon om och är redo att köras med MicroPython.
 
-    5. Installera och starta Thonny
-        Ladda ner och installera Thonny från thonny.org.
-        Öppna Thonny och välj sedan Run → Select Interpreter (eller motsvarande inställning i din version av Thonny).
-        Under “Which interpreter or device” väljer du MicroPython (Raspberry Pi Pico) och bekräftar.
+5. Installera och starta Thonny
+	Ladda ner och installera Thonny från thonny.org.
+	Öppna Thonny och välj sedan Run → Select Interpreter (eller motsvarande inställning i din version av Thonny).
+	Under “Which interpreter or device” väljer du MicroPython (Raspberry Pi Pico) och bekräftar.
 
-    6. Koppla in LED och motstånd
-        Anslut kortbenet (katoden) på LED:en till GND på Picon.
-        Anslut långbenet (anoden) via motståndet till en valfri GPIO-pin, till exempel GPIO 15.
-        Se till att du har rätt värde på motståndet (220 Ω är vanligt) för att skydda LED:en och Picon.
+6. Koppla in LED och motstånd
+	Anslut kortbenet (katoden) på LED:en till GND på Picon.
+	Anslut långbenet (anoden) via motståndet till en valfri GPIO-pin, till exempel GPIO 15.
+	Se till att du har rätt värde på motståndet (220 Ω är vanligt) för att skydda LED:en och Picon.
 
-    7. Skriv ett enkelt blink-program i Thonny
-    Öppna ett nytt skript i Thonny och klistra in följande kodexempel (anpassa pin-numret om du använt ett annat GPIO-nummer):
+7. Skriv ett enkelt blink-program i Thonny
+	Öppna ett nytt skript i Thonny och klistra in följande kodexempel (anpassa pin-numret om du använt ett annat GPIO-nummer):
 	
-	    Kör och testa programmet
-        Spara filen som exempelvis blink.py (eller direkt som main.py för att det ska starta automatiskt vid ström på Picon).
-        Klicka på Run i Thonny för att ladda upp koden till Picon.
-        Din LED bör nu blinka med 1 sekund intervall.
+	Kör och testa programmet
+    Spara filen som exempelvis blink.py (eller direkt som main.py för att det ska starta automatiskt vid ström på Picon).
+    Klicka på Run i Thonny för att ladda upp koden till Picon.
+    Din LED bör nu blinka med 1 sekund intervall.
 
-    8. (Valfritt) Spara som main.py för automatisk start
-        Om du vill att blinkprogrammet ska starta automatiskt när Picon spänningssätts, kan du spara det som main.py direkt på Picon.
-        Koppla sedan från och anslut Picon igen för att bekräfta att programmet körs automatiskt.
+8. (Valfritt) Spara som main.py för automatisk start
+	 Om du vill att blinkprogrammet ska starta automatiskt när Picon spänningssätts, kan du spara det som main.py direkt på Picon.
+	 Koppla sedan från och anslut Picon igen för att bekräfta att programmet körs automatiskt.
 
-    69. Felsökning
-        Ingen USB-enhet hittas: Se till att du håller BOOTSEL intryckt innan du ansluter Picon.
-        LED blinkar ej: Verifiera att du anslutit LED och motstånd rätt (rätt polaritet och GPIO-pin).
-        Felaktigt GPIO-nummer: Säkerställ att koden använder rätt pin där LED är ansluten.
+69. Felsökning
+     Ingen USB-enhet hittas: Se till att du håller BOOTSEL intryckt innan du ansluter Picon.
+     LED blinkar ej: Verifiera att du anslutit LED och motstånd rätt (rätt polaritet och GPIO-pin).
+     Felaktigt GPIO-nummer: Säkerställ att koden använder rätt pin där LED är ansluten.
 
 
-    När du följt dessa steg bör du ha en fungerande blinkande LED på din Raspberry Pi Pico!
+     När du följt dessa steg bör du ha en fungerande blinkande LED på din Raspberry Pi Pico!
 
 ![testbild](https://s3u.tmimgcdn.com/800x0/u1633126/b2eb5d0321cd63636b5ff1f81b906b4d.jpg)
 
