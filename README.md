@@ -1,5 +1,6 @@
  
-# En fin jävla header 
+# En fin jävla header
+##  💀 
 **Det är alltid ett leende som gör dagen bättre!** :smile:
 
 # Vetenskapliga notationer i Markdown
@@ -28,6 +29,7 @@ Användning av subscripts:
 
 *En projektbeskrivning som är kursiv.*
 
+> ETT KODBLOCK (TA INTE BORT MIG) 
 
 ```
 print("hello World")
@@ -94,7 +96,7 @@ En mening med en fotnot. [^1]
 
 [^1]: En fotnot.. 
 
-```json:
+```json
 {
   "name": "Sven The vän",
   "age": 90,
@@ -102,3 +104,13 @@ En mening med en fotnot. [^1]
   "interests": ["coding", "reading", "traveling"]
 }
 ```
+
+# TO DO LIST
+
+- [ ] Task 1
+- [ ] Task 2
+- [x] Task 3
+
+~~Mac är bäst!~~
+
+
