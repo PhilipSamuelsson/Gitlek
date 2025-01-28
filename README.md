@@ -63,9 +63,8 @@ Nedan följer en ordnad lista i över hur du installerar och får en lampa (LED)
     När du följt dessa steg bör du ha en fungerande blinkande LED på din Raspberry Pi Pico!
 
 ![testbild](https://s3u.tmimgcdn.com/800x0/u1633126/b2eb5d0321cd63636b5ff1f81b906b4d.jpg)
-<<<<<<< HEAD
->>>>>>> 2f34f32052e7ca7a015813930dc1cd2004a6c937
-=======
+
+
 
 En mening med en fotnot. [^1]
 
@@ -79,4 +78,3 @@ En mening med en fotnot. [^1]
   "interests": ["coding", "reading", "traveling"]
 }
 ```
->>>>>>> 7922c2f4da4e4a353638eb709501064ec0a423f9
