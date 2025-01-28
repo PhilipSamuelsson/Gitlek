@@ -83,10 +83,10 @@ En mening med en fotnot. [^1]
 
 # TO DO LIST
 
-- [] Task 1
-- [] Task 2
+- [ ] Task 1
+- [ ] Task 2
 - [x] Task 3
-=======
+
 ~~Mac är bäst!~~
 
 
