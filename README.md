@@ -63,3 +63,10 @@ En mening med en fotnot. [^1]
 
 [^1]: En fotnot.. 
 
+``json:
+{
+  "name": "Sven The vän",
+  "age": 90,
+  "city": "New York",
+  "interests": ["coding", "reading", "traveling"]
+}
