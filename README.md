@@ -9,9 +9,7 @@
 
 ---
 
-> ETT BLOCKCITAT! 
-
-Nedan följer en ordnad lista i Markdown-format över hur du installerar och får en lampa (LED) att blinka med en Raspberry Pi Pico.
+Nedan följer en ordnad lista i över hur du installerar och får en lampa (LED) att blinka med en Raspberry Pi Pico.
 
     Förberedelser
         Material: Raspberry Pi Pico, en LED, ett motstånd (t.ex. 220 Ω), kopplingskablar och en USB-kabel.
@@ -56,6 +54,7 @@ Nedan följer en ordnad lista i Markdown-format över hur du installerar och få
         LED blinkar ej: Verifiera att du anslutit LED och motstånd rätt (rätt polaritet och GPIO-pin).
         Felaktigt GPIO-nummer: Säkerställ att koden använder rätt pin där LED är ansluten.
 
+
     När du följt dessa steg bör du ha en fungerande blinkande LED på din Raspberry Pi Pico!
 
 ![testbild](https://s3u.tmimgcdn.com/800x0/u1633126/b2eb5d0321cd63636b5ff1f81b906b4d.jpg)
@@ -63,3 +62,4 @@ Nedan följer en ordnad lista i Markdown-format över hur du installerar och få
 En mening med en fotnot. [^1]
 
 [^1]: En fotnot.. 
+
