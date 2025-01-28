@@ -5,6 +5,7 @@
 
 *En projektbeskrivning som är kursiv.*
 
+> ETT KODBLOCK (TA INTE BORT MIG) 
 
 ```
 print("hello World")
@@ -85,3 +86,7 @@ En mening med en fotnot. [^1]
 - [] Task 1
 - [] Task 2
 - [x] Task 3
+=======
+~~Mac är bäst!~~
+
+
