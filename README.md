@@ -59,3 +59,7 @@ Nedan följer en ordnad lista i Markdown-format över hur du installerar och få
     När du följt dessa steg bör du ha en fungerande blinkande LED på din Raspberry Pi Pico!
 
 ![testbild](https://s3u.tmimgcdn.com/800x0/u1633126/b2eb5d0321cd63636b5ff1f81b906b4d.jpg)
+
+En mening med en fotnot. [^1]
+
+[^1]: En fotnot.. 
