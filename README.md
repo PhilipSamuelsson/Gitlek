@@ -70,3 +70,4 @@ En mening med en fotnot. [^1]
   "city": "New York",
   "interests": ["coding", "reading", "traveling"]
 }
+```
