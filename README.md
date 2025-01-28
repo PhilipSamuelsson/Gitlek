@@ -3,23 +3,14 @@
 ##  💀 
 **Det är alltid ett leende som gör dagen bättre!** :smile:
 
-# Vetenskapliga notationer i Markdown
+# Vetenskapliga notationer
 
-### Första och andra derivatan
-
-Den första derivatan kan skrivas som \( f'(x) \) och den andra derivatan som \( \frac{d²y}{dx²} \).
-
-### Användning av subscripts:
-
-Första derivatan med index: \( f₁(x) \)
-
-Andra derivatan med subscripts: \( \frac{d₂y}{dx²} \)
-
-
-# Vetenskaplig notation i README.md
+###Första derivatan
 
 Den första derivatan av \( f \) med avseende på \( x \) är \( f'(x) \), medan den andra derivatan är \( \frac{d^2y}{dx^2} \).
 
+###Användning
+ 
 Användning av subscripts:
 - Första derivatan: \( f₁(x) \)
 - Andra derivatan: \( \frac{d₂y}{dx²} \)
