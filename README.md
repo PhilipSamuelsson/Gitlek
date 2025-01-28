@@ -80,3 +80,6 @@ En mening med en fotnot. [^1]
   "interests": ["coding", "reading", "traveling"]
 }
 ```
+
+~~Mac är bäst!~~
+
