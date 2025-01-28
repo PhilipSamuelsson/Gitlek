@@ -56,5 +56,6 @@ Nedan följer en ordnad lista i Markdown-format över hur du installerar och få
         LED blinkar ej: Verifiera att du anslutit LED och motstånd rätt (rätt polaritet och GPIO-pin).
         Felaktigt GPIO-nummer: Säkerställ att koden använder rätt pin där LED är ansluten.
 
-När du följt dessa steg bör du ha en fungerande blinkande LED på din Raspberry Pi Pico!
+    När du följt dessa steg bör du ha en fungerande blinkande LED på din Raspberry Pi Pico!
+
 ![testbild](https://s3u.tmimgcdn.com/800x0/u1633126/b2eb5d0321cd63636b5ff1f81b906b4d.jpg)
