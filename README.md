@@ -72,7 +72,7 @@ En mening med en fotnot. [^1]
 
 [^1]: En fotnot.. 
 
-```json:
+```json
 {
   "name": "Sven The vän",
   "age": 90,
