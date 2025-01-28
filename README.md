@@ -1,9 +1,26 @@
-# En fin jävla header 
+ 
+# En fin jävla header
+##  💀 
+**Det är alltid ett leende som gör dagen bättre!** :smile:
+
+# Vetenskapliga notationer
+
+### Första derivatan
+
+Den första derivatan av \( f \) med avseende på \( x \) är \( f'(x) \), medan den andra derivatan är \( \frac{d^2y}{dx^2} \).
+
+### Användning
+ 
+Användning av subscripts:
+- Första derivatan: \( f₁(x) \)
+- Andra derivatan: \( \frac{d₂y}{dx²} \)
+
 
 > Projektets mål är att skapa en lösning som förenklar och effektiviserar processen för att hantera och analysera data på ett säkert och tillförlitligt sätt.
 
 *En projektbeskrivning som är kursiv.*
 
+> ETT KODBLOCK (TA INTE BORT MIG) 
 
 ```
 print("hello World")
@@ -76,15 +93,14 @@ Nedan följer en ordnad lista i över hur du installerar och får en lampa (LED)
     När du följt dessa steg bör du ha en fungerande blinkande LED på din Raspberry Pi Pico!
 
 ![testbild](https://s3u.tmimgcdn.com/800x0/u1633126/b2eb5d0321cd63636b5ff1f81b906b4d.jpg)
-<<<<<<< HEAD
->>>>>>> 2f34f32052e7ca7a015813930dc1cd2004a6c937
-=======
+
+
 
 En mening med en fotnot. [^1]
 
 [^1]: En fotnot.. 
 
-```json:
+```json
 {
   "name": "Sven The vän",
   "age": 90,
@@ -92,4 +108,13 @@ En mening med en fotnot. [^1]
   "interests": ["coding", "reading", "traveling"]
 }
 ```
->>>>>>> 7922c2f4da4e4a353638eb709501064ec0a423f9
+
+# TO DO LIST
+
+- [ ] Task 1
+- [ ] Task 2
+- [x] Task 3
+
+~~Mac är bäst!~~
+
+
