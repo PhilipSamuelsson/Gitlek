@@ -80,3 +80,9 @@ En mening med en fotnot. [^1]
   "interests": ["coding", "reading", "traveling"]
 }
 ```
+
+# TO DO LIST
+
+- [] Task 1
+- [] Task 2
+- [x] Task 3
