@@ -1,93 +1,120 @@
- 
-# En fin jävla header
-##  💀 
-**Det är alltid ett leende som gör dagen bättre!** :smile:
-> Projektets mål är att skapa en lösning som förenklar och effektiviserar processen för att hantera och analysera data på ett säkert och tillförlitligt sätt.
+# Blinkande LED på Raspberry Pi Pico W
 
-*En projektbeskrivning som är kursiv.*
+Denna guide beskriver hur du får den inbyggda LED-lampan på en Raspberry Pi Pico W att blinka med både MicroPython och C/C++.
 
-> ETT KODBLOCK (TA INTE BORT MIG) 
+## Förberedelser
+### Hårdvara
+- Raspberry Pi Pico W
+- USB-kabel (USB-A till micro-USB)
+- Dator (Windows, macOS eller Linux)
 
+### Programvara
+- **MicroPython**
+  - Thonny IDE (rekommenderat)
+  - MicroPython firmware
+- **C/C++**
+  - Raspberry Pi Pico SDK
+  - CMake och GNU Make
+  - Compiler (arm-none-eabi-gcc)
+
+## Alternativ 1: Blinkande LED med MicroPython
+
+### Steg 1: Installera MicroPython på Pico
+1. Ladda ner den senaste MicroPython UF2-filen från:
+   - [https://micropython.org/download/rp2-pico-w/](https://micropython.org/download/rp2-pico-w/)
+2. Håll in **BOOTSEL**-knappen på din Pico och anslut den till datorn via USB.
+3. Släpp knappen när enheten monteras som en enhet med namnet **RPI-RP2**.
+4. Dra och släpp UF2-filen till **RPI-RP2**-enheten.
+5. Pico startar om och kör MicroPython.
+
+### Steg 2: Skriv och kör programmet
+1. Öppna **Thonny IDE**.
+2. Välj **Raspberry Pi Pico** som interpreter under **Run** > **Select Interpreter**.
+3. Skriv följande kod:
+
+```python
+from machine import Pin, Timer
+
+led = Pin("LED", Pin.OUT)
+timer = Timer()
+
+def blink(timer):
+    led.toggle()
+
+timer.init(freq=1, mode=Timer.PERIODIC, callback=blink)
 ```
-print("hello World")
-```
 
-
-[link](https://www.example.com/my%20great%20page)
+4. Klicka på **Run** för att köra programmet. LED-lampan ska nu blinka en gång per sekund.
 
 ---
 
-Nedan följer en ordnad lista i över hur du installerar och får en lampa (LED) att blinka med en Raspberry Pi Pico.
+## Alternativ 2: Blinkande LED med C/C++
 
-    Förberedelser
-        Material: Raspberry Pi Pico, en LED, ett motstånd (t.ex. 220 Ω), kopplingskablar och en USB-kabel.
-        Programvara: Thonny (eller annan kompatibel IDE) och MicroPython-firmware för Raspberry Pi Pico.
+### Steg 1: Installera och konfigurera Raspberry Pi Pico SDK
+1. Installera **CMake**, **GNU Make** och **arm-none-eabi-gcc**.
+2. Klona och konfigurera Pico SDK:
 
-    Ladda ner MicroPython-firmware
-        Gå till Raspberry Pis officiella webbplats eller MicroPython.org för att hämta den senaste .uf2-filen för Raspberry Pi Pico.
+```sh
+git clone -b master https://github.com/raspberrypi/pico-sdk.git
+cd pico-sdk
+export PICO_SDK_PATH=$(pwd)
+```
 
-    Sätt Picon i bootloader-läge
-        Håll in BOOTSEL-knappen på Raspberry Pi Pico.
-        Anslut Picon till din dator via USB medan du fortfarande håller in knappen.
-        Släpp BOOTSEL-knappen när Picon dyker upp som en extern lagringsenhet i ditt filsystem.
+### Steg 2: Skriv blink-programmet
+Skapa en fil `blink.c`:
 
-    Ladda MicroPython på Picon
-        Dra och släpp den nedladdade .uf2-filen till din Pico-enhet i filhanteraren (datorn behandlar då Picon som ett USB-minne).
-        När överföringen är klar startar Picon om och är redo att köras med MicroPython.
+```c
+#include "pico/stdlib.h"
 
-    Installera och starta Thonny
-        Ladda ner och installera Thonny från thonny.org.
-        Öppna Thonny och välj sedan Run → Select Interpreter (eller motsvarande inställning i din version av Thonny).
-        Under “Which interpreter or device” väljer du MicroPython (Raspberry Pi Pico) och bekräftar.
+int main() {
+    gpio_init(PICO_DEFAULT_LED_PIN);
+    gpio_set_dir(PICO_DEFAULT_LED_PIN, GPIO_OUT);
 
-    Koppla in LED och motstånd
-        Anslut kortbenet (katoden) på LED:en till GND på Picon.
-        Anslut långbenet (anoden) via motståndet till en valfri GPIO-pin, till exempel GPIO 15.
-        Se till att du har rätt värde på motståndet (220 Ω är vanligt) för att skydda LED:en och Picon.
-
-    Skriv ett enkelt blink-program i Thonny
-    Öppna ett nytt skript i Thonny och klistra in följande kodexempel (anpassa pin-numret om du använt ett annat GPIO-nummer):
-	
-	    Kör och testa programmet
-        Spara filen som exempelvis blink.py (eller direkt som main.py för att det ska starta automatiskt vid ström på Picon).
-        Klicka på Run i Thonny för att ladda upp koden till Picon.
-        Din LED bör nu blinka med 1 sekund intervall.
-
-    (Valfritt) Spara som main.py för automatisk start
-        Om du vill att blinkprogrammet ska starta automatiskt när Picon spänningssätts, kan du spara det som main.py direkt på Picon.
-        Koppla sedan från och anslut Picon igen för att bekräfta att programmet körs automatiskt.
-
-    Felsökning
-        Ingen USB-enhet hittas: Se till att du håller BOOTSEL intryckt innan du ansluter Picon.
-        LED blinkar ej: Verifiera att du anslutit LED och motstånd rätt (rätt polaritet och GPIO-pin).
-        Felaktigt GPIO-nummer: Säkerställ att koden använder rätt pin där LED är ansluten.
-
-
-    När du följt dessa steg bör du ha en fungerande blinkande LED på din Raspberry Pi Pico!
-
-![testbild](https://s3u.tmimgcdn.com/800x0/u1633126/b2eb5d0321cd63636b5ff1f81b906b4d.jpg)
-
-
-
-En mening med en fotnot. [^1]
-
-[^1]: En fotnot.. 
-
-```json
-{
-  "name": "Sven The vän",
-  "age": 90,
-  "city": "New York",
-  "interests": ["coding", "reading", "traveling"]
+    while (1) {
+        gpio_put(PICO_DEFAULT_LED_PIN, 1);
+        sleep_ms(500);
+        gpio_put(PICO_DEFAULT_LED_PIN, 0);
+        sleep_ms(500);
+    }
 }
 ```
 
-# TO DO LIST
+### Steg 3: Bygg och ladda upp programmet
+1. Skapa en `CMakeLists.txt`:
 
-- [ ] Task 1
-- [ ] Task 2
-- [x] Task 3
+```cmake
+cmake_minimum_required(VERSION 3.13)
+include(pico_sdk_import.cmake)
 
-~~Mac är bäst!~~
+project(blink C CXX ASM)
+pico_sdk_init()
 
+add_executable(blink blink.c)
+target_link_libraries(blink pico_stdlib)
+pico_add_extra_outputs(blink)
+```
+
+2. Bygg projektet:
+
+```sh
+mkdir build
+cd build
+cmake ..
+make
+```
+
+3. Ladda upp `.uf2`-filen till Pico genom att hålla in **BOOTSEL**, ansluta USB och kopiera filen till **RPI-RP2**.
+
+### Steg 4: Starta programmet
+När Pico startar om, ska LED-lampan blinka en gång per sekund.
+
+---
+
+## Felsökning
+- Kontrollera att Pico är korrekt ansluten och i BOOTSEL-läge vid behov.
+- Se till att rätt firmware används (MicroPython eller C/C++ SDK).
+- Om det inte fungerar i C/C++, dubbelkolla att rätt verktyg är installerade och `PICO_SDK_PATH` är satt.
+
+## Avslutning
+Nu har du fått den inbyggda LED-lampan på en Raspberry Pi Pico W att blinka! 🚀
 
